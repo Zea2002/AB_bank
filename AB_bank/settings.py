@@ -84,12 +84,12 @@ WSGI_APPLICATION = 'AB_bank.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -100,12 +100,12 @@ WSGI_APPLICATION = 'AB_bank.wsgi.application'
 #         'PORT': env("PORT"),
 #     }
 # }
-DATABASES = {
-    'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-         default='postgresql://ab_bank_2hcz_user:rZ0QHNJNET6ezYPYiGrovSGKwlbb9KVV@dpg-cq88ev4s1f4s73ch0nbg-a.oregon-postgres.render.com/ab_bank_2hcz',
-    )
-}
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Feel free to alter this value to suit your needs.
+#          default='postgresql://ab_bank_2hcz_user:rZ0QHNJNET6ezYPYiGrovSGKwlbb9KVV@dpg-cq88ev4s1f4s73ch0nbg-a.oregon-postgres.render.com/ab_bank_2hcz',
+#     )
+# }
 
 
 # Password validation
