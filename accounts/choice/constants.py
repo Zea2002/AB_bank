@@ -1,0 +1,9 @@
+gender_type=(
+    ('Male','Male'),
+    ('Female','Female'),
+    ('Others','others')
+)
+account_type=(
+    ('Current','Current'),
+    ('Savings','Savings')
+)
