@@ -33,7 +33,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["*"]
-# CSRF_TRUSTED_ORIGINS = ['https://mamar-bank.onrender.com','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://AB_bank.onrender.com','https://*.127.0.0.1']
 
 # Application definition
 
@@ -90,22 +90,22 @@ WSGI_APPLICATION = 'AB_bank.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env("DB_NAME"),
-        'USER': env("USER"),
-        'PASSWORD': env("PASSWORD"),
-        'HOST': env("HOST"),
-        'PORT': env("PORT"),
-    }
-}
 # DATABASES = {
-#     'default': dj_database_url.config(
-#         # Feel free to alter this value to suit your needs.
-#         # default='postgres://mamarbank_user:LALgYwd0AYd1wgoh3tFD2Mx6wa1tR4Rs@dpg-cm551lmd3nmc73am8kt0-a.oregon-postgres.render.com/mamarbank',
-#     )
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': env("DB_NAME"),
+#         'USER': env("USER"),
+#         'PASSWORD': env("PASSWORD"),
+#         'HOST': env("HOST"),
+#         'PORT': env("PORT"),
+#     }
 # }
+DATABASES = {
+    'default': dj_database_url.config(
+        # Feel free to alter this value to suit your needs.
+         default='postgresql://ab_bank_2hcz_user:rZ0QHNJNET6ezYPYiGrovSGKwlbb9KVV@dpg-cq88ev4s1f4s73ch0nbg-a.oregon-postgres.render.com/ab_bank_2hcz',
+    )
+}
 
 
 # Password validation
