@@ -33,7 +33,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://ab-bank-k9u3.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://ab-bank-2.onrender.com','https://*.127.0.0.1']
 
 # Application definition
 
